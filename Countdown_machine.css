@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-left: -380px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Montserrat" sans-serif;
+	background-color: rgba(89, 249, 252, 1);
+	background-color: rgba(89, 249, 252, 0.52);
+	background-image: linear-gradient(
+		157deg,
+		rgba(89, 249, 252, 0.52) 22%,
+		rgba(31, 127, 129, 1) 100%
+		
+	);
+}
+
+.counter-app {
+	position: relative;
+}
+
+.app-body {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: 600px;
+	border-radius: 15px;
+	-webkit-box-shadow: 16px -2px 21px 4px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 16px -2px 21px 4px rgba(66, 68, 90, 1);
+	box-shadow: 16px -2px 21px 4px rgba(66, 68, 90, 1);
+	overflow: hidden;
+}
+.image-section {
+	display: flex;
+	position: relative;
+	height: 400px;
+	background-image: url("https://cdn.pixabay.com/photo/2016/12/11/12/02/mountains-1899264_1280.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.settings-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: none;
+	padding: 20px 20px;
+	cursor: pointer;
+	font-size: 35px;
+	transition: color 0.4s;
+}
+.settings-btn:hover {
+	color: #4d4d4d;
+}
+.time-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 60%;
+	background-color: rgba(160, 226, 237, 1);
+	background-image: linear-gradient(
+		40deg,
+		rgba(160, 226, 237, 1) 22%,
+		rgba(176, 229, 240, 1) 100%
+	);
+	z-index: 100;
+}
+
+h3 {
+	font-size: 36px;
+	text-align: center;
+}
+.time-cards {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 18%;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+.number {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 48px;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 50px 30px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    opacity: 0;
+    transition: transform .5s, opacity .3s;
+}
+
+.active {
+    transform: translateX(-110px);
+    opacity: 1;
+}
+
+h1{
+	margin-bottom: 30px;
+	text-align: center;
+	
+}
+label{
+	margin-bottom: 10px;
+}
+input{
+	margin-bottom: 30px;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.date{
+	text-align: center;
+}
+.save{
+	padding: 10px 20px;
+	cursor: pointer;
+	background: none;
+	border-radius: 5px;
+}
+
+.save:hover{
+	background-color: yellow;
+}
